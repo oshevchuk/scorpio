@@ -3,5 +3,5 @@ http://asyncee.github.io/2016/04/07/nastrojka-webpack-dlya-raboty-s-react-i-scss
 
 uwp info
 https://docs.microsoft.com/en-us/windows/uwp/get-started/create-a-hello-world-app-js-uwp
-
+1
 https://github.com/Microsoft/Windows-universal-samples
