@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Find Local Farmers Markets</title>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/st.css">
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <!--<script src="https://code.jquery.com/jquery-3.2.1.min.js"-->
+    <!--integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>-->
+
+    <script defer
+            src="https://maps.google.com/maps/api/js?sensor=false?key=AIzaSyAQtuMEFP3bm9_k-S-Y-Lv-9dXPK7daZ0o"></script>
+    <script defer src="assets/code.js"></script>
+    <!--<script async defer-->
+    <!--src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAQtuMEFP3bm9_k-S-Y-Lv-9dXPK7daZ0o&callback=initMap"></script>-->
+
+
+</head>
+<body>
+<div id="map"></div>
+<div class="panel">
+    <div class="col-xs-12">
+        <label for="lat">lat: </label> <input type="text" class="form-control" placeholder="latitude" id="lat" value="48.643315">
+        <label for="lon">lon:</label> <input type="text" class="form-control" placeholder="lontitude" id="lon" value="23.282714">
+
+        <br>
+        <button class="btn" onclick="zoomin()">+</button>
+        <button class="btn" onclick="zoomout()">-</button>
+        <button class="btn btn-primary" onclick="refresh()">Recalc</button>
+        <br>
+        <label for="">my position</label>
+        <button class="btn btn-primary" onclick="getLocation()">My position</button>
+    </div>
+</div>
+<button onclick="getLocation()">get</button>
+
+<a href="https://tile.thunderforest.com/static/cycle/50.6228183,26.256911700000003,10/128x128.png?apikey=cd57107f8fe94339a18a22ff9f4a1ebf">22</a>
+https://tile.thunderforest.com/static/cycle/26.256911,50.622513,16/128x128.png?apikey=cd57107f8fe94339a18a22ff9f4a1ebf
+https://tile.thunderforest.com/static/cycle/26.256911,50.622513,10/256x256.png?apikey=cd57107f8fe94339a18a22ff9f4a1ebf
+https://tile.thunderforest.com/static/cycle/26.226911,50.502513,14/512x512.png?apikey=cd57107f8fe94339a18a22ff9f4a1ebf
+<p id="demo">
+</p>
+
+AIzaSyAQtuMEFP3bm9_k-S-Y-Lv-9dXPK7daZ0o
+
+
+</body>
+</html>
